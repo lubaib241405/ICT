@@ -1,0 +1,919 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0369a9; /* Matches Monash blue color */
+    color: white;
+    padding: 5px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: left;
+    gap: 40px;
+}
+
+.home-icon img {
+    height: 15px;
+    align-items: left; /* Adjust based on the icon size */
+}
+
+.navbar-title {
+    font-size: 14px;
+    font-weight: bold;
+    align-content: left;
+    
+}
+
+/* Center Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Right Icons */
+.navbar-icons {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-content: right;
+}
+
+.navbar-icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-icons li img {
+    height: 16px; /* Adjust icon size */
+}
+/* Secondary Navbar Styling */
+.secondary-navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+
+.secondary-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Logo Styling */
+.secondary-logo img {
+    height: 40px; /* Adjust based on the logo size */
+}
+
+/* Navigation Links */
+.secondary-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.secondary-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.secondary-links li a:hover {
+    color: #0076c0; /* Monash blue hover effect */
+}
+
+/* Apply Button */
+.apply-button a {
+    text-decoration: none;
+    border: 1px solid #0076c0;
+    padding: 8px 15px;
+    color: #0076c0;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-button a:hover {
+    background-color: #0076c0;
+    color: white;
+}
+/* Hero Section Styling */
+.hero-section {
+  background-image: url('assets/hero-bg.jpeg'); /* Replace with the actual background image */
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  position: relative; /* Ensure .hero-content is the reference for absolute positioning */
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 35px; /* Make the heading smaller */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margins for precise placement */
+  line-height: 1.2; /* Adjust line spacing for the two-line heading */
+  position: absolute;
+  top: -150px; /* Position closer to the top */
+  left: 10px; /* Align to the left */
+  max-width: 320px; /* Ensure it wraps into two lines */
+}
+
+ .accept-offer-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px; /* Slightly smaller text for the link */
+  font-weight: lighter;
+  transition: color 0.3s;
+  position: absolute;
+  top: -60px; /* Position beneath the heading */
+  left: 50px; /* Align with the heading */
+}
+
+.hero-content .accept-offer-link:hover {
+  color: #0076c0; /* Monash blue hover effect */
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px 0 0 50px;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 20px; /* Smaller font size for smaller screens */
+    max-width: 150px; /* Ensure it wraps properly */
+  }
+
+  .hero-content .accept-offer-link {
+    font-size: 14px;
+    top: 50px; /* Adjust spacing for smaller screens */
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+}
+
+
+.third-section h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.third-section .subheading {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Cards Styling */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Main Content Section */
+.main-content {
+  display: flex; /* Flexbox for side-by-side layout */
+  align-items: center; /* Align content vertically */
+  justify-content: space-between; /* Add space between text and image */
+  max-width: 1200px; /* Limit the overall width */
+  margin: 50px auto; /* Center the content horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* Add spacing between text and image */
+}
+
+.main-content .content {
+  flex: 1; /* Allow text content to take up remaining space */
+  text-align: left;
+}
+
+.main-content .content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.main-content .content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.main-content .content button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0076c0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-content .content button:hover {
+  background-color: #005999;
+  transform: scale(1.05);
+}
+
+.main-content .image {
+  position: relative; /* Set relative positioning for the container */
+  flex: 0.8; /* Image takes up 50% of the space */
+}
+
+.main-content .image img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.main-content .image .play-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  width: 60px; /* Size of the play button */
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.main-content .image .play-button:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px; /* Triangle shape */
+  border-color: transparent transparent transparent white; /* White play icon */
+  margin-left: 5px; /* Adjust positioning inside the button */
+}
+
+.main-content .image .play-button:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}
+
+.main-content .image .play-button:active {
+  transform: translate(-50%, -50%) scale(0.95); /* Slight scale-down effect */
+}
+
+
+.university-rankings-section {
+  background: url('assets/background-image2.jpg') no-repeat center center / cover;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.university-rankings-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.university-rankings-section .description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.rankings-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ranking-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ranking-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.ranking-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.ranking-card h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.ranking-card h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.ranking-card p {
+  font-size: 1em;
+  color: #d9d9d9;
+}
+/* Main Section */
+/* Card Container */
+.impact-card {
+  width: 70%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Flex Container for Content */
+.impact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Text Section */
+.text-content {
+  flex: 1;
+  color: #000;
+}
+
+.text-content .tag {
+  display: inline-block;
+  background-color: #eee;
+  color: #555;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.text-content .cta-button {
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Image Section */
+.image-content {
+  flex: 1;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Play Button */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 15px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.hero-section1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content1 {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  max-width: 600px; /* Limit the width of the content */
+  padding: 20px;    /* Add padding for spacing */
+  background: rgba(0, 0, 0, 0.7); /* Optional: Add a subtle background to make it pop */
+  border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 40px;
+  font-family: Arial, sans-serif;
+}
+.footer-social {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #00aaff;
+}
+
+
+.footer-acknowledgment {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-acknowledgment a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1 1 15%;
+  margin: 0 10px;
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  border-top: 1px solid #555;
+}
+
+
+.footer-additional {
+  border-top: 1px solid #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px 0px;
+  padding-top: 30px; /* Adds space between the line and the content */
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+
+.footer-info {
+  flex: 1 1 20%;
+  margin-right: 20px;
+  min-width: 150px;
+}
+
+.footer-info h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.footer-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-info a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-logo {
+  flex: 1 1 20%;
+  text-align: right;
+}
+
+.footer-logo img {
+  max-width: 120px;
+  height: 70;
+  margin-top: -500px; /* Adjust the value to move the image upward */
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom-links li {
+  margin-right: 15px;
+}
+
+.footer-bottom-links li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-bottom-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+/* ----------- Responsiveness ----------- */
+
+/* Media query for mobile phones (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .navbar-container, 
+  .secondary-navbar .container, 
+  .main-content, 
+  .impact-card,
+  .footer { 
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+  }
+
+  .navbar-left {
+    flex-direction: column; /* Stack navbar left items vertically */
+    align-items: center; 
+  }
+
+  .navbar-links, 
+  .navbar-icons {
+    flex-direction: column; /* Stack links and icons vertically */
+    gap: 10px; 
+  }
+
+  .secondary-links ul {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .apply-button {
+    margin: 20px 0; /* Add margin top and bottom */
+  }
+
+  .hero-content h1 {
+    font-size: 24px; 
+    top: 30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+
+  .accept-offer-link {
+    font-size: 16px; 
+    top: 80px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+
+  .search-bar {
+    width: 90%; 
+  }
+
+  .cards {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .card {
+    width: 90%; 
+    margin-bottom: 20px; 
+  }
+
+  .main-content .content {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .main-content .image {
+    margin-bottom: 20px; 
+  }
+
+  .university-rankings-section h2 {
+    font-size: 2em; 
+  }
+
+  .university-rankings-section .description {
+    font-size: 1em; 
+  }
+
+  .ranking-card {
+    width: 90%; 
+    margin-bottom: 20px; 
+  }
+
+  .impact-content {
+    flex-direction: column; 
+  }
+
+  .impact-card {
+    width: 90%; 
+  }
+
+  .image-content {
+    margin-top: 20px; 
+  }
+
+  .footer-links {
+    flex-direction: column; 
+  }
+
+  .footer-column {
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .footer-additional {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .footer-info, 
+  .footer-logo {
+    flex: 1 1 100%; 
+    margin: 10px 0; 
+    text-align: center; 
+  }
+
+  .footer-logo img {
+    margin-top: 0; 
+  }
+}
+
+@media screen and (max-widht: 900px )and (min-widht: 600px){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
